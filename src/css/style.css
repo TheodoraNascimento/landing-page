@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400');
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header*/
+
+.header .header-container{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px; 
+}
+
+.link-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.link-logo .logo{
+    height: 100px;
+}
+
+.link-logo .title{
+    font-size: 4.0rem;
+    font-weight: 700;
+}
+
+.link-logo .title:hover{
+    color: #20D760;
+    transition: 0.3s ease-in-out;
+}
+
+.header .nav .menu{
+    display: flex;
+    gap: 30px;
+   
+}
+
+
+.item a{
+    font-size: 2.0rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.item a:hover{
+    background-color: #20D760;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Main - Projects*/
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main .projects{
+   display: flex;
+   height: 700px;
+   position: relative; 
+   justify-content: center;   
+   align-items: center; 
+}
+
+.main .projects .img-projects{
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    min-width: 100%; 
+    height: 100%;
+    position: absolute; 
+    z-index: -1;
+    filter: brightness(70%); 
+    opacity: 0;
+    transition: 0.5s ease-out;
+    font-size: 20px;
+}
+
+.main .projects .img-projects.project1{
+    background-image: url(../img/painel1.jpg);
+}
+
+.main .projects .img-projects.project2{
+    background-image: url(../img/painel2.jpg);
+}
+
+.main .projects .img-projects.project3{
+    background-image: url(../img/painel3.jpg);
+}
+
+.main .projects .img-projects.first{
+    opacity: 1;
+}
+
+.main .projects .projects-title{
+  
+    font-size: calc(10em + 1vw);
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+.arrow img{
+    height: 50px;
+    position: absolute;
+    margin: 10px;
+
+}
+
+.main .projects .arrow.arrow-preview img{
+    transform: rotate(180deg);
+    left: 0;
+}
+
+.main .projects .arrow.arrow-next img{
+    right: 0;
+}
+
+.arrow.disable{
+    opacity: 0.3;
+    cursor: default;
+}
+
+/* Main - About US*/
+
+.main .about-us .about-us-general{
+    display: flex;
+    background-color:  #2A40AB;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.main .about-us .info{
+    width: 40%;
+}
+
+.main .about-us .about-us-title{
+    font-size: 4rem;
+    padding: 30px 0px;
+    color: #20D760;
+}
+
+.main .about-us .about-us-text{
+
+    font-size: 2rem;
+    color: #fff;
+    line-height: 3rem;
+}
+
+.main .about-us .about-us-image{
+    width: 60%;
+}
+
+/* FOOTER*/
+.footer{
+   padding-bottom: 50px;
+}
+
+.footer .footer-info{
+   display: flex;
+   height: 100%;
+   min-width: 100%;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 40px;
+  
+   /* gap: 70px; */
+}
+
+.footer .social-medias{
+    display: flex; 
+    gap: 10px;
+    justify-self: flex-end;
+}
+
+.footer .social-medias .icon i{
+    line-height: 50px;
+    text-align: center;
+}
+
+.footer .social-medias .icon {
+    font-size: 4.0rem;
+    text-align: center;
+     border-radius: 50%;
+     width: 50%;
+     padding: 0 15px; 
+     border: 1px solid black;
+     margin: 0 10px;
+}
+
+.footer .social-medias .icon:hover{
+    background-color: #20D760;
+    transition: 0.3s ease-in-out;
+}
+
+
+.footer p{
+  text-align: center;
+  font-size: 2.0rem;
+ 
+}
+
+
